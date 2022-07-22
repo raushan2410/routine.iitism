@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    width: 100vw;
+    min-width: 250mm;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #050505;
+    border-radius: 5px;
+}
+
+#main {
+    background-color: whitesmoke;
+    position: relative;
+    left: 0%;
+    display: flex;
+    justify-content: space-around;
+    /* width: 80vw; */
+    /* max-width: 297mm; */
+    width: 250mm;
+    height: 80vh;
+    max-height: 180mm;
+    flex-direction: column;
+}
+#top {
+    position: relative;
+    top: -2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#table {
+    /* width: 100%; */
+    position: relative;
+    /* top: -7%; */
+    /* height: 100%; */
+    width: 100%;
+}
+#table-top td {
+    border-top: 2px solid black;
+    color: brown;
+    font-weight: 600;
+}
+td {
+    height: 5rem;
+    font-size: 0.7rem;
+    text-align: center;
+    /* margin: 10px; */
+    /* background-color: #050505; */
+    /* border: 1px solid blueviolet; */
+    border-left: 2px solid black ;
+    border-bottom: 2px solid black;
+}
+
+td.last {
+    border-right: 2px solid black;
+}
+th {
+    color: hotpink;
+    min-width: 50px;
+    text-align: center;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+th#day {
+    border-top: 2px solid black;
+}
+
+input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: lightblue;
+    color: black;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding-top: 0px;
+    margin-top: 0px;
+    font-weight: 600;
+    /* text-decoration: underline blue; */
+}
+
+select {
+    height: 2rem;
+    text-align: center;
+    font-size: large;
+    transition: all 1s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 3px 10px -1px blue;
+    min-width: 100px;
+    cursor: pointer;
+    animation: animate 3s ease-in-out 2s 1 ;
+}
+@keyframes animate {
+    0% {
+        box-shadow: 0px 3px 10px -1px blue;
+    }
+    25% {
+        box-shadow: -3px 0px 10px -1px red;
+    }
+    50% {
+        box-shadow: 0px -3px 10px -1px blue;
+    }
+    75% {
+        box-shadow: 3px 0px 10px -1px red;
+    }
+}
+
+#button {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+}
+
+button {
+    position: relative;
+    height: 2.5rem;
+    width: 6rem;
+    background-color: rgb(31, 194, 31);
+    font-size: large;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    transition: all 0.3s ease-in-out;
+    border: 2px white solid;
+    color: black;
+}
+#help {
+    background-color: #ffe143;
+}
+#reset {
+    background-color: rgb(210, 14, 14);
+    /* left: -50px; */
+}
+/* #submitButton {
+    left: 120px;
+} */
+button:hover {
+    letter-spacing: 2px;
+    opacity: 0.7;
+    box-shadow: 0px 0px 10px 2px blue;
+}
