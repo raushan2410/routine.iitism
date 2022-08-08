@@ -20,7 +20,7 @@ sbmt.addEventListener('click',generatePdf);
 // }
 // window.addEventListener('click',fun);
 
-var input = document.querySelectorAll('input')
+var input = document.querySelectorAll('textarea')
 function checkFilled() {
     for (var i = 0;i < input.length; i++) {
         if (input[i].value !== '') {
